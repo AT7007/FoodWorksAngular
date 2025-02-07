@@ -1,0 +1,65 @@
+<div class="container mt-4">
+    <div class="row">
+      <div class="col-md-4" *ngFor="let item of foodItems">
+        <div class="card">
+          <img src="{{ item.image }}" class="card-img-top img-fluid"  style="height: 250px; object-fit: cover;" alt="{{ item.name }}">
+          <div class="card-body">
+            <h5 class="card-title">{{ item.name }}</h5>
+            <p class="card-text">{{ item.description }}</p>
+            <p class="card-text text-primary">${{ item.price }}</p>
+            <a [routerLink]="['/item', item.id]" class="btn btn-primary">View Details</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container mt-5 mb-5">
+    <h2>Special Offers</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card bg-warning text-white">
+          <img src="assets/images/pasta.jpg" class="card-img-top" style="height: 250px; object-fit: cover;" alt="Special Offer">
+          <div class="card-body">
+            <h5 class="card-title">Buy 1 Get 1 Free Pizza</h5>
+            <p class="card-text">Order any large pizza and get another one for free! Limited time only.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card bg-danger text-white">
+          <img src="assets/images/pizza.jpg" class="card-img-top" style="height: 250px; object-fit: cover;" alt="Special Offer">
+          <div class="card-body">
+            <h5 class="card-title">10% Off on Your First Order</h5>
+            <p class="card-text">Enjoy 10% off your first order with us. Use code FIRST10.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card bg-success text-white">
+          <img src="assets/images/burger.jpg" class="card-img-top" style="height: 250px; object-fit: cover;" alt="Special Offer">
+          <div class="card-body">
+            <h5 class="card-title">Free Drink with Every Burger</h5>
+            <p class="card-text">Get a free soft drink with every burger ordered. Don't miss out!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container mt-5 py-5 newsletter-section bg-light rounded-3 shadow">
+    <div class="row align-items-center">
+      <!-- Left Content: Text and Details -->
+      <div class="col-md-6 text-center text-md-start">
+        <h2 class="fw-bold">Stay Updated!</h2>
+        <p class="text-muted">Subscribe to our newsletter and get exclusive offers, updates, and mouth-watering recipes delivered straight to your inbox.</p>
+      </div>
+      <!-- Right Content: Subscription Form -->
+      <div class="col-md-6">
+        <form class="d-flex">
+          <input type="email" class="form-control me-2 rounded-pill shadow-sm" placeholder="Enter your email" aria-label="Enter your email" required>
+          <button class="btn btn-primary px-4 rounded-pill shadow-sm" type="submit">Subscribe</button>
+        </form>
+        <!-- Optional Privacy Text -->
+        <small class="d-block mt-2 text-muted">We respect your privacy. Unsubscribe anytime.</small>
+      </div>
+    </div>
+  </div>

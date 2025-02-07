@@ -1,0 +1,7 @@
+<div class="container mt-4">
+    <h2>{{ item.name }}</h2>
+    <img [src]="item.image" class="card-img-top img-fluid"  style="height: 350px; object-fit: cover;"  alt="{{ item.name }}">
+    <p>{{ item.description }}</p>
+    <p class="text-primary">Price: ${{ item.price }}</p>
+    <button class="btn btn-success" (click)="addToCart()">Add to Cart</button>
+  </div>

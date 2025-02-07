@@ -1,0 +1,51 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+    font-family: 'Arial', sans-serif;
+  }
+  footer {
+    
+    width: 100%;
+  }
+  /* Add to styles.scss */
+.navbar {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+body {
+  padding-top: 56px; /* Adjust this value to match navbar height */
+}
+.newsletter-section {
+    background: linear-gradient(135deg, #f8f9fa, #e9ecef); /* Subtle gradient background */
+    padding: 2rem 1rem;
+  }
+  
+  .newsletter-section h2 {
+    color: #343a40; /* Darker text for contrast */
+  }
+  
+  .newsletter-section .form-control {
+    border: 2px solid #dee2e6; /* Slight border for better visibility */
+    transition: all 0.3s ease; /* Smooth interaction effect */
+  }
+  
+  .newsletter-section .form-control:focus {
+    border-color: #0d6efd; /* Highlight on focus */
+    box-shadow: 0 0 10px rgba(13, 110, 253, 0.5); /* Glowing effect */
+  }
+  
+  .newsletter-section .btn-primary {
+    background: #0d6efd; /* Bootstrap primary color */
+    border: none;
+    transition: all 0.3s ease; /* Smooth hover effect */
+  }
+  
+  .newsletter-section .btn-primary:hover {
+    background: #084298; /* Darker blue on hover */
+  }
+  
+  .newsletter-section small {
+    font-size: 0.85rem;
+  }
